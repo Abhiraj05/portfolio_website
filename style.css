@@ -2,13 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Press+Start+2P&family=Staatliches&display=swap");
 
-/* * {
+* {
   margin: 0px;
   padding: 0px;
-} */
-/* body { */
+}
+body {
 /* background-color: RGB(38, 38, 38); */
-/* background-color: RGB(32, 32, 32);
+ background-color: RGB(32, 32, 32); 
 
   border: 2px solid RGB(122, 111, 254);
 
@@ -21,8 +21,8 @@
     100% {
         opacity: 1;
     }
-} */
-/* nav {
+} 
+nav {
   background-color: RGB(32, 32, 32);
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -30,8 +30,8 @@
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-} */
-/* .navbar {
+}
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -64,9 +64,9 @@
 
   display: flex;
   justify-content: space-around;
-  align-items: center; */
-/* gap: 30vw; */
-/* }
+  align-items: center; 
+gap: 30vw;
+}
 
 .overpass-mono {
   font-family: "Overpass Mono", monospace;
@@ -186,7 +186,7 @@
   color: RGB(122, 111, 254);
 
 }
- */
+ 
 
 @media screen and (max-width: 400px) {
   * {
