@@ -2,13 +2,13 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&family=Press+Start+2P&family=Staatliches&display=swap");
 
-* {
+/* * {
   margin: 0px;
   padding: 0px;
-}
-body {
-  /* background-color: RGB(38, 38, 38); */
-  background-color: RGB(32, 32, 32);
+} */
+/* body { */
+/* background-color: RGB(38, 38, 38); */
+/* background-color: RGB(32, 32, 32);
 
   border: 2px solid RGB(122, 111, 254);
 
@@ -21,8 +21,8 @@ body {
     100% {
         opacity: 1;
     }
-}
-nav {
+} */
+/* nav {
   background-color: RGB(32, 32, 32);
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -30,8 +30,8 @@ nav {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-.navbar {
+} */
+/* .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -64,9 +64,9 @@ nav {
 
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  /* gap: 30vw; */
-}
+  align-items: center; */
+/* gap: 30vw; */
+/* }
 
 .overpass-mono {
   font-family: "Overpass Mono", monospace;
@@ -185,4 +185,202 @@ nav {
   text-decoration: underline;
   color: RGB(122, 111, 254);
 
+}
+ */
+
+@media screen and (max-width: 600px) {
+  /* * {
+  margin: 0px;
+  padding: 0px;
+} */
+  /* body { */
+  /* background-color: RGB(38, 38, 38); */
+  /* background-color: RGB(32, 32, 32);
+
+  border: 2px solid RGB(122, 111, 254);
+
+}
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* nav {
+  background-color: RGB(32, 32, 32);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-bottom: 2px solid RGB(122, 111, 254);
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+} */
+  /* .navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30vw;
+} */
+  /* .items { */
+  /* display: flex; */
+  /* gap: 80px; */
+  /* } */
+
+  .item-list {
+    list-style: none;
+  }
+  .logo {
+    width: 10px;
+    height: 10px;
+  }
+  .press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: RGB(232, 231, 231);
+  }
+
+  /* .bodypart { */
+  /* margin-top: 12vh; */
+  /* margin-bottom: 8.5vh; */
+
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  /* gap: 30vw; */
+  /* } */
+
+  .overpass-mono {
+    font-family: "Overpass Mono", monospace;
+    /* font-optical-sizing: auto; */
+    font-weight: 700;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: RGB(122, 111, 254);
+    opacity: 0;
+    animation: in 3s ease-out forwards;
+    animation-delay: 1s;
+    padding-left: 14vw;
+  }
+  @keyframes in {
+    0% {
+      letter-spacing: -12px;
+      opacity: 0;
+    }
+    30% {
+      letter-spacing: 2px;
+      opacity: 1;
+    }
+    100% {
+      letter-spacing: 13px;
+      opacity: 1;
+    }
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: RGB(140, 255, 241);
+    }
+  }
+  .overpass-mono-style {
+    text-align: center;
+    font-family: "Overpass Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 15px;
+    color: RGB(140, 255, 241);
+    /* padding-top: 15px; */
+    overflow: hidden;
+    border-right: 0.15em solid;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 5.5s steps(30, end), blink-caret 0.3s step-end infinite;
+  }
+
+  .sktech {
+    width: 0px;
+    height: 0px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .btn {
+    margin-left: 30vw;
+    text-transform: capitalize;
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    font-size: 7px;
+    border-radius: 50px;
+    border: 2px solid RGB(232, 231, 231);
+    background-color: RGB(255, 85, 85);
+    font-family: "Press Start 2P", system-ui;
+    color: RGB(232, 231, 231);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .links {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 12vw;
+    /* animation: fadeInAnimation ease 3s; */
+    /* animation-iteration-count: 1; */
+    /* animation-fill-mode: forwards; */
+  }
+  .logo-link {
+    margin-bottom: 10px;
+    width: 36px;
+    height: 36px;
+  }
+  .logo-link-adjust {
+    margin-bottom: 10px;
+    width: 43px;
+    height: 43px;
+  }
+
+  .madebydetail {
+    color: RGB(232, 231, 231);
+    font-family: "Press Start 2P", system-ui;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 5px;
+    /* padding-top: 5vh; */
+    /* padding-bottom: 5vh; */
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .box-transition:hover {
+    transform: scale(1.1);
+  }
+
+  .underline:hover {
+    text-decoration: underline;
+    color: RGB(122, 111, 254);
+  }
 }
