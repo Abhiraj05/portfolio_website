@@ -64,7 +64,6 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30vw;
 }
 
 .overpass-mono {
@@ -192,16 +191,17 @@ nav {
   color: RGB(122, 111, 254);
 }
 
+
 @media screen and (max-width: 370px) {
   * {
     margin: 0px;
     padding: 0px;
   }
   body {
-    /* background-color: RGB(38, 38, 38); */
+    
     background-color: RGB(32, 32, 32);
 
-    /* border: 2px solid RGB(122, 111, 254); */
+   
     padding-bottom: auto;
   }
   nav {
