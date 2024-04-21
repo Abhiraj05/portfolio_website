@@ -188,7 +188,7 @@
 }
  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
   /* * {
   margin: 0px;
   padding: 0px;
@@ -261,7 +261,7 @@
     font-weight: 700;
     font-style: normal;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 18px;
     color: RGB(122, 111, 254);
     opacity: 0;
     animation: in 3s ease-out forwards;
@@ -307,9 +307,9 @@
     font-weight: 600;
     font-style: normal;
     text-transform: capitalize;
-    font-size: 15px;
+    font-size: 13px;
     color: RGB(140, 255, 241);
-    /* padding-top: 15px; */
+    padding-top: 2vh;
     overflow: hidden;
     border-right: 0.15em solid;
     white-space: nowrap;
@@ -327,9 +327,9 @@
   }
 
   .btn {
-    margin-left: 30vw;
+    margin-left: 27vw;
     text-transform: capitalize;
-    margin-top: 20px;
+    margin-top: 6vh;
     padding: 10px 30px 10px 30px;
     text-align: center;
     font-size: 7px;
@@ -344,22 +344,26 @@
   }
 
   .links {
-    padding-top: 10px;
+    padding-top: 5vh;
     text-align: center;
     padding-right: 12vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5vw;
     /* animation: fadeInAnimation ease 3s; */
     /* animation-iteration-count: 1; */
     /* animation-fill-mode: forwards; */
   }
   .logo-link {
-    margin-bottom: 10px;
-    width: 36px;
-    height: 36px;
+    /* margin-bottom: 10px; */
+    width: 32px;
+    height: 32px;
   }
   .logo-link-adjust {
-    margin-bottom: 10px;
-    width: 43px;
-    height: 43px;
+
+    width: 36px;
+    height: 36px;
   }
 
   .madebydetail {
@@ -367,9 +371,8 @@
     font-family: "Press Start 2P", system-ui;
     text-transform: capitalize;
     text-align: center;
-    font-size: 5px;
-    /* padding-top: 5vh; */
-    /* padding-bottom: 5vh; */
+    font-size: 7px;
+  
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
