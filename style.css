@@ -7,21 +7,20 @@
   padding: 0px;
 }
 body {
-/* background-color: RGB(38, 38, 38); */
- background-color: RGB(32, 32, 32); 
+  /* background-color: RGB(38, 38, 38); */
+  background-color: RGB(32, 32, 32);
 
   border: 2px solid RGB(122, 111, 254);
-
 }
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
-} 
+  100% {
+    opacity: 1;
+  }
+}
 nav {
   background-color: RGB(32, 32, 32);
   padding-top: 1vh;
@@ -64,8 +63,8 @@ nav {
 
   display: flex;
   justify-content: space-around;
-  align-items: center; 
-gap: 30vw;
+  align-items: center;
+  gap: 30vw;
 }
 
 .overpass-mono {
@@ -80,29 +79,38 @@ gap: 30vw;
   animation: in 3s ease-out forwards;
   animation-delay: 1s;
 }
-@keyframes in{
-    0%{
-      letter-spacing: -12px;
-      opacity: 0;
-    }
-    30%{
-      letter-spacing: 2px;
-      opacity: 1;
-    }
-    100%{
-      letter-spacing: 13px;
-      opacity: 1;
-    }
+@keyframes in {
+  0% {
+    letter-spacing: -12px;
+    opacity: 0;
   }
+  30% {
+    letter-spacing: 2px;
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: 13px;
+    opacity: 1;
+  }
+}
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  from {
+    width: 0;
   }
-  
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color:RGB(140, 255, 241) }
+  to {
+    width: 100%;
   }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: RGB(140, 255, 241);
+  }
+}
 .overpass-mono-style {
   font-family: "Overpass Mono", monospace;
   font-optical-sizing: auto;
@@ -113,13 +121,11 @@ gap: 30vw;
   color: RGB(140, 255, 241);
   padding-top: 15px;
   overflow: hidden;
-  border-right: .15em solid ;
+  border-right: 0.15em solid;
   white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 5.5s steps(30, end),
-    blink-caret .3s step-end infinite;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 5.5s steps(30, end), blink-caret 0.3s step-end infinite;
 }
 
 .sktech {
@@ -178,50 +184,42 @@ gap: 30vw;
 }
 
 .box-transition:hover {
-    transform: scale(1.1);
-  }
+  transform: scale(1.1);
+}
 
-.underline:hover{
+.underline:hover {
   text-decoration: underline;
   color: RGB(122, 111, 254);
-
 }
- 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 370px) {
   * {
-  margin: 0px;
-  padding: 0px;
-}
- body { 
-/* background-color: RGB(38, 38, 38); */
-background-color: RGB(32, 32, 32);
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    /* background-color: RGB(38, 38, 38); */
+    background-color: RGB(32, 32, 32);
 
-/* border: 2px solid RGB(122, 111, 254); */
-padding-bottom: auto;
-}
-
-/* } */
-nav { 
-  background-color: RGB(32, 32, 32);
-  padding-top: 3vh;
-  padding-bottom: 1vh;
-  margin-bottom: 6vh;
-  border-bottom: 2px solid RGB(122, 111, 254);
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-} 
-   .navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 50vw;
-} 
-  /* .items { */
-  /* display: flex; */
-  /* gap: 80px; */
-  /* } */
+    /* border: 2px solid RGB(122, 111, 254); */
+    padding-bottom: auto;
+  }
+  nav {
+    background-color: RGB(32, 32, 32);
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+    margin-bottom: 6vh;
+    border-bottom: 2px solid RGB(122, 111, 254);
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50vw;
+  }
 
   .item-list {
     list-style: none;
@@ -229,8 +227,9 @@ nav {
   .logo {
     width: 45px;
     height: 35px;
-    
+
   }
+
   .press-start-2p-regular {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
@@ -239,7 +238,6 @@ nav {
     text-transform: capitalize;
     color: RGB(232, 231, 231);
   }
-
 
 
   .overpass-mono {
@@ -336,9 +334,9 @@ nav {
   .links {
     padding-top: 5vh;
     text-align: center;
- 
+
     display: flex;
-    gap:0vw;
+    gap: 0vw;
     justify-content: space-around;
     align-items: center;
     animation: fadeInAnimation ease 3s;
@@ -350,7 +348,6 @@ nav {
     height: 32px;
   }
   .logo-link-adjust {
-
     width: 36px;
     height: 36px;
   }
