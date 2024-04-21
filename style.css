@@ -9,7 +9,7 @@
 body {
   /* background-color: RGB(38, 38, 38); */
   background-color: RGB(32, 32, 32);
-
+  padding-bottom: auto;
   border: 2px solid RGB(122, 111, 254);
 }
 @keyframes fadeInAnimation {
