@@ -192,7 +192,7 @@ nav {
 }
 
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 600px) {
   * {
     margin: 0px;
     padding: 0px;
