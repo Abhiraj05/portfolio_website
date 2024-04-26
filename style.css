@@ -35,7 +35,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 30vw;
+  gap: 40vw;
 }
 .items {
   display: flex;
