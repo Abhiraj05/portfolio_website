@@ -7,7 +7,7 @@
   padding: 0px;
 }
 body {
-  /* background-color: RGB(38, 38, 38); */
+  
   background-color: RGB(32, 32, 32);
   padding-bottom: auto;
   border: 2px solid RGB(122, 111, 254);
@@ -193,7 +193,7 @@ nav {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   * {
     margin: 0px;
     padding: 0px;
@@ -219,7 +219,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 50vw;
+    gap: 10vw;
   }
 
   .item-list {
@@ -305,18 +305,18 @@ nav {
     animation: typing 5.5s steps(30, end), blink-caret 0.3s step-end infinite;
   }
 
-  .sktech {
+   .sktech {
     padding-left: 18vw;
     padding-top: 4vh;
-    width: 180px;
-    height: 180px;
+    width: 0px;
+    height:0px;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-  }
+  } 
 
   .btn {
-    margin-left: 29vw;
+    margin-left:31vw;
     text-transform: capitalize;
     margin-top: 6vh;
     padding: 10px 30px 10px 30px;
